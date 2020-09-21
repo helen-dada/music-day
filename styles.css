@@ -1,0 +1,95 @@
+:root {
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body * + * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    background-color: #e8e8e8;
+}
+
+h1 {
+    text-align: center;
+}
+
+.container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20%;
+    right: 20%;
+    background-color: #fff;
+    margin: 0 auto;
+}
+
+.grid {
+    border: 1px solid black;
+    border-radius: .5em;
+    margin: 1em 0;
+    padding: 4em 0;
+    display: grid;
+    grid-template-rows: 2em repeat(9, 1fr);
+    grid-template-columns: 200px repeat(9, 3em);
+    /*grid-gap: .7em;    */
+    text-align: center;
+}
+
+.one-row {
+    display: contents;
+}
+
+div {
+    background-color: #fff;
+}
+
+.circle {
+    background-color: #052F6D;
+    margin: 1em auto;
+    padding-top: 1em;
+    width: 1em; 
+    height: 1em;
+    border-radius: 50%;
+}
+
+.category-2 {
+    padding-top: 1em;
+}
+
+.link {
+    border: solid white 1px;
+    width: 3em;
+    height: 3em;
+    margin: 0;
+    padding: 0;
+   }
+
+.link a {
+    display: block; 
+    height: 100%; /* Высота на весь слой */
+}
+
+.link a:hover .circle{
+    background-color: greenyellow;
+}
+
+.header {
+    background-color: cornflowerblue;
+}
+
+.category-1 p {
+    transform: rotate(-45deg);  
+    display: inline; 
+    padding-top: 1em;
+    text-indent: 1.5em;
+ }
